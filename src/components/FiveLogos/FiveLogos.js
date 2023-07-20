@@ -8,22 +8,22 @@ import logo5 from '../../assets/images/logo5.png'
 const FiveLogos = () => {
     return (
         <>
-            <section class="five-logos">
-                <div class="container">
-                    <div class="five-logos-flex">
-                        <div class="five-logos-width">
+            <section className="five-logos">
+                <div className="container">
+                    <div className="five-logos-flex">
+                        <div className="five-logos-width">
                             <img src={logo1} alt="lazy" />
                         </div>
-                        <div class="five-logos-width">
+                        <div className="five-logos-width">
                             <img src={logo2} alt="lazy" />
                         </div>
-                        <div class="five-logos-width">
+                        <div className="five-logos-width">
                             <img src={logo3} alt="lazy" />
                         </div>
-                        <div class="five-logos-width">
+                        <div className="five-logos-width">
                             <img src={logo4} alt="lazy" />
                         </div>
-                        <div class="five-logos-width">
+                        <div className="five-logos-width">
                             <img src={logo5} alt="lazy" />
                         </div>
                     </div>

@@ -5,10 +5,10 @@ import objectImg from '../../assets/images/Object.png'
 const GotProject = () => {
     return (
         <>
-            <section class="got-project" style={{ backgroundImage: `url(${dottedBg})` }}>
-                <div class="container">
-                    <div class="got-project-flex">
-                        <div class="got-project-col">
+            <section className="got-project" style={{ backgroundImage: `url(${dottedBg})` }}>
+                <div className="container">
+                    <div className="got-project-flex">
+                        <div className="got-project-col">
                             <h2>Got a project
                                 in your mind</h2>
                             <p>If you've got a project in mind, now is the time to turn that idea into
@@ -16,9 +16,9 @@ const GotProject = () => {
                                 the first step towards making your vision a reality is often the hardest
                                 part. But with the right team behind you, the process can be smooth
                                 and stress-free.</p>
-                            <a href="#">Talk To Us<i class="fa-solid fa-arrow-right"></i> </a>
+                            <a href="#">Talk To Us<i className="fa-solid fa-arrow-right"></i> </a>
                         </div>
-                        <div class="got-project-col">
+                        <div className="got-project-col">
                             <img src={objectImg} alt="lazy" />
                         </div>
                     </div>

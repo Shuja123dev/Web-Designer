@@ -5,14 +5,14 @@ import TeamMember from './TeamMember'
 const ExpertTeam = () => {
     return (
         <>
-            <section class="expert-team">
-                <div class="container">
-                    <div class="expert-text">
+            <section className="expert-team">
+                <div className="container">
+                    <div className="expert-text">
                         <h6>Expert Team Members</h6>
                         <h2>Meet our Professional
                             Team Members</h2>
                     </div>
-                    <div class="expert-flex">
+                    <div className="expert-flex">
                         <TeamMember memberPic={member1} job='Sn. Ui Ux Designer' name='Mitchel Marsh' />
                         <TeamMember memberPic={member1} job='Sn. Ui Ux Designer' name='Mitchel Marsh' />
                         <TeamMember memberPic={member1} job='Sn. Ui Ux Designer' name='Mitchel Marsh' />

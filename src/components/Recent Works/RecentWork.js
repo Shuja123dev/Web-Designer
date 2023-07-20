@@ -4,7 +4,7 @@ import WorkTabs from './WorkTabs'
 const RecentWork = () => {
     return (
         <>
-            <section class="recent-work">
+            <section className="recent-work">
                 <WorkTabs />
             </section>
         </>
