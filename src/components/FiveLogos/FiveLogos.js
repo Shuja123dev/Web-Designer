@@ -27,6 +27,35 @@ const FiveLogos = () => {
                             <img src={logo5} alt="lazy" />
                         </div>
                     </div>
+                    <div className="mobile-logo-slider">
+                        <div className="owl-carousel owl-theme">
+                            <div className="item">
+                                <div className="mobile-slider">
+                                    <img src={logo1} alt="lazy" />
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="mobile-slider">
+                                    <img src={logo2} alt="lazy" />
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="mobile-slider">
+                                    <img src={logo3} alt="lazy" />
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="mobile-slider">
+                                    <img src={logo4} alt="lazy" />
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div className="mobile-slider">
+                                    <img src={logo5} alt="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

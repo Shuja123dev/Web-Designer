@@ -35,7 +35,7 @@ $(document).ready(function () {
 })
 
 $(".menu-icon").click(function () {
-  $(this).toggleClass("opened");
+  jQuery(this).toggleClass("opened");
   $("ul.nav-flex").toggleClass("opened");
 });
 

@@ -19,7 +19,7 @@ const HomePage = () => {
         <>
             <Header />
             <main id="main">
-                {/* <Banner /> */}
+                <Banner />
                 <FiveLogos />
                 <RecentWork />
                 <TabsContainer />

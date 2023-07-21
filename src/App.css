@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
@@ -45,6 +47,11 @@ p {
 h2 {
   font-family: 'Exo 2', sans-serif;
   font-size: 48px;
+  font-weight: 600;
+}
+
+h2 strong {
+  font-weight: 700;
 }
 
 .container {
@@ -216,7 +223,7 @@ section.creative-solutions::after {
   content: "";
   width: 100%;
   height: 100vh;
-  background-color: #1a1a22;
+  background-color: rgba(0, 0, 0, 0.9);
   top: 0;
 }
 
@@ -289,6 +296,7 @@ section.five-logos {
 
 .tabbing-content h2 {
   padding-bottom: 70px;
+  text-transform: uppercase;
 }
 
 .elevate-flex {
@@ -411,7 +419,7 @@ ul.tabs {
   margin: 0px;
   padding: 0 30px;
   list-style: none;
-  border: 1px solid;
+  border: 1px solid #ebebeb;
   border-left: none;
   border-right: none;
 }
@@ -452,7 +460,6 @@ section.our-services h6 {
 }
 
 section.our-services h2 {
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 
@@ -720,9 +727,10 @@ section.expert-team::before {
 .testimoniasl-text h2 {
   padding-bottom: 70px;
   width: 100%;
-  max-width: 40%;
+  max-width: 48%;
   margin: 0 auto;
   line-height: normal;
+  text-transform: uppercase;
 }
 
 section.testimonials {
@@ -800,7 +808,7 @@ section.we-believe {
 
 .get-touch-flex {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -1168,6 +1176,10 @@ ul.sub-tabbing li a {
   max-width: 30%;
 }
 
+.mobile-logo-slider {
+  display: none;
+}
+
 @media only screen and (max-width: 1680px) {
   ul.tabs li {
     padding: 15px 5px;
@@ -1195,18 +1207,32 @@ ul.sub-tabbing li a {
     width: 100%;
     max-width: 50%;
   }
-
-  .banner-image h1,
-  .banner-image p {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-  }
 }
 
 @media only screen and (max-width: 1440px) {
   .logo-content-flex {
     padding: 13px 0;
+  }
+
+  .banner-image h1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  section.five-logos {
+    padding: 50px 0;
+  }
+
+  .banner-image p {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 !important;
+    ;
+  }
+
+  .header-nav {
+    margin: 10px 0;
   }
 
   section.our-services::before {
@@ -1233,11 +1259,54 @@ ul.sub-tabbing li a {
     padding: 15px 10px;
     margin: 10px 0;
   }
+
+  .creative .owl-nav .owl-prev {
+    left: 10px;
+  }
+
+  .creative .owl-nav .owl-prev {
+    right: 10px;
+  }
+
+  ul.tabs li a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  ul.tabs li {
+    font-size: 12px;
+    font-family: 'Exo 2';
+  }
+
+  ul.tabs li {
+    padding: 15px 10px;
+  }
+
+  ul.sub-tabbing {
+    top: 60px;
+  }
+
+  section.testimonials {
+    padding: 70px 0 0 0;
+  }
+
+  .expert-text h2 {
+    width: 100%;
+    max-width: 57%;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
   .service-flex {
     gap: 57px;
+  }
+
+  section.our-services {
+    padding: 0;
+  }
+
+  ul.tabs {
+    padding: 5px;
   }
 }
 
@@ -1292,6 +1361,11 @@ ul.sub-tabbing li a {
     width: 100%;
     max-width: 90%;
   }
+
+  .header-logo-width {
+    width: 100%;
+    max-width: 55%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1319,7 +1393,6 @@ ul.sub-tabbing li a {
     min-height: 60vh;
   }
 
-
   section.creative-solutions::after {
     height: 60vh;
   }
@@ -1339,12 +1412,12 @@ ul.sub-tabbing li a {
   }
 
   .service-flex {
-    gap: 46px;
+    gap: 73px;
   }
 
   .got-project-col h2 {
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .testimoniasl-text h2 {
@@ -1363,7 +1436,7 @@ ul.sub-tabbing li a {
   }
 
   .digital-col h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   section.get-in-touch {
@@ -1400,13 +1473,18 @@ ul.sub-tabbing li a {
     left: 45%;
     top: 80%;
   }
+
+  section.our-services h2 {
+    padding-bottom: 45px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .menu-icon.menu-icon-3 {
     display: block;
-    margin-left: auto;
-    right: 50px;
+    right: 20px;
+    position: absolute;
+    top: 30px;
   }
 
   ul.nav-flex.opened {
@@ -1552,9 +1630,24 @@ ul.sub-tabbing li a {
     left: 40%;
     top: 80%;
   }
+
+  .black-color {
+    display: none;
+  }
+
+  .contact-icon-flex {
+    display: block;
+    display: none;
+  }
+
+  .tabs>li:hover>ul,
+  .tabs>li.clicked>ul {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+
   .header-top-icons {
     width: 100%;
     max-width: 100%;
@@ -1590,14 +1683,12 @@ ul.sub-tabbing li a {
     max-width: 100%;
   }
 
-  .contact-icon-flex {
-    display: block;
-  }
 
-  .menu-icon.menu-icon-3 {
+
+  /* .menu-icon.menu-icon-3 {
     right: 0px;
-    bottom: 185px;
-  }
+    bottom: 160px;
+  } */
 
   .header-top-text p {
     padding-bottom: 10px;
@@ -1615,10 +1706,7 @@ ul.sub-tabbing li a {
     font-size: 30px;
   }
 
-  .tabs>li:hover>ul,
-  .tabs>li.clicked>ul {
-    display: none;
-  }
+
 
   .image-box {
     width: 100%;
@@ -1689,7 +1777,7 @@ ul.sub-tabbing li a {
   }
 
   .testimoniasl-text h2 {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   .digital-col a {
@@ -1697,7 +1785,7 @@ ul.sub-tabbing li a {
   }
 
   .digital-col h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .input-flex {
@@ -1728,5 +1816,171 @@ ul.sub-tabbing li a {
     width: 100%;
     max-width: 1200px;
     margin: 20px auto 0;
+  }
+
+  section.our-services {
+    padding: 0;
+  }
+
+  section.testimonials {
+    padding: 20px 0 0;
+  }
+
+  .testimonials-flex {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimonials-col {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .left-icon {
+    left: 0;
+    top: -45px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .left-icon img {
+    margin: 15px auto;
+  }
+
+  .digital-flex {
+    padding: 20px;
+  }
+
+  .digital-col p {
+    font-size: 20px;
+  }
+
+  .believe-content h1 {
+    font-size: 26px;
+  }
+
+  section.we-believe {
+    height: 500px;
+    background-size: cover;
+  }
+
+  .believe-content a {
+    padding: 10px 30px;
+  }
+
+  section.get-in-touch {
+    padding-top: 0px;
+  }
+
+  .input-col,
+  .input-col input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .touch-text {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .input-flex .input-col:nth-child(5) {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .submit-button {
+    margin: 10px;
+  }
+
+  .banner-image h1 {
+    font-size: 24px;
+    padding: 25px 0;
+  }
+
+  .banner-image p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-bar {
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .customers-width {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .customers-width img {
+    margin: 0 auto;
+  }
+
+  section.creative-solutions::after {
+    height: 65vh;
+  }
+
+  .tabbing-content h2 {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .five-logos-flex {
+    display: none;
+  }
+
+  section.five-logos {
+    padding: 10px 0;
+  }
+
+  .mobile-slider img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .mobile-logo-slider {
+    display: block;
+  }
+
+  ul.tabs li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    padding-right: 10px;
+  }
+
+  ul.tabs {
+    padding: 0 20px;
+  }
+
+  ul.tabs li {
+    padding: 15px 0px;
+  }
+
+  .header-nav {
+    height: 0px;
+    margin: 0;
+  }
+
+  ul.tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul.tabs li {
+    width: 50%;
+  }
+
+  .phone-icon a i {
+    font-size: 20px;
   }
 }
