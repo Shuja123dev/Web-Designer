@@ -15,7 +15,7 @@ const BannerImg = ({ bgImage, className }) => {
                             stunning website, creating engaging graphics, or developing robust digital solutions
                         </p>
                         <div className="search-bar">
-                            <input type="" placeholder="Want a logo or a website design" style={{ width: '100%' }} /><i
+                            <input type="" placeholder="Want a logo or a website design" /><i
                                 className="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="customers-flex">

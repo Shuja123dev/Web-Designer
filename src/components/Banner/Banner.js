@@ -7,15 +7,17 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Banner = () => {
     return (
-        <OwlCarousel items={1} className="owl-theme" loop nav margin={8} dots={true} >
-            <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
-            <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
-            <BannerImg className='owl-item active' bgImage={bannerImg1} />
-            <BannerImg className='owl-item' bgImage={bannerImg1} />
-            <BannerImg className='owl-item' bgImage={bannerImg1} />
-            <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
-            <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
-        </OwlCarousel >
+        <section id='heroSlider'>
+            <OwlCarousel items={1} className="owl-theme" loop nav margin={8} dots={true} >
+                <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
+                <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
+                <BannerImg className='owl-item active' bgImage={bannerImg1} />
+                <BannerImg className='owl-item' bgImage={bannerImg1} />
+                <BannerImg className='owl-item' bgImage={bannerImg1} />
+                <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
+                <BannerImg className='owl-item cloned' bgImage={bannerImg1} />
+            </OwlCarousel >
+        </section>
     )
 }
 

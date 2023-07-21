@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import showAll from '../../assets/icons/icon1.png'
-import logoBranding from '../../assets/icons/icon2.png'
+import logoBranding from '../../assets/icons/icons.png'
 import websiteIcon from '../../assets/icons/icon3.png'
 import socialMedia from '../../assets/icons/icon4.png'
 import uiUx from '../../assets/icons/icon5.png'

@@ -228,6 +228,7 @@ section.creative-solutions::after {
 }
 
 .search-bar input {
+    width: 90%;
     border: none;
     outline: none;
 }
@@ -2101,5 +2102,31 @@ section.elevate-online {
 
     .phone-icon a i {
         font-size: 20px;
+    }
+
+    #main .owl-carousel .owl-nav button.owl-next {
+
+        bottom: 15px;
+
+        font-size: 32px;
+        height: 33px;
+        top: auto;
+        right: 24px;
+        width: 33px;
+    }
+
+    #main .owl-carousel .owl-nav button.owl-prev {
+        bottom: 15px;
+
+        font-size: 32px !important;
+
+        height: 33px;
+        top: auto;
+        left: 24px;
+        width: 33px;
+    }
+
+    ul.tabs li.current {
+        border-bottom: 1px solid #33333345;
     }
 }
