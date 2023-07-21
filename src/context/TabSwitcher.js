@@ -17,10 +17,10 @@ const TabSwitcher = ({ children }) => {
             <Tab3 />
             <Tab4 />
             <Tab5 />
-            <Tab6 />
+            {/* <Tab6 />
             <Tab7 />
             <Tab8 />
-            <Tab9 />
+            <Tab9 /> */}
         </>
     );
     return (

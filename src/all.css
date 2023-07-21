@@ -47,7 +47,7 @@ p {
 h2 {
     font-family: 'Exo 2', sans-serif;
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h2 strong {
@@ -243,6 +243,10 @@ section.creative-solutions::after {
     width: 100%;
     max-width: 548px;
     margin-bottom: 50px;
+}
+
+.boldtext {
+    font-weight: 800;
 }
 
 .search-bar i {

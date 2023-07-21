@@ -9,7 +9,7 @@ const TabsContainer = () => {
         <>
             <div className="tabbing-content">
                 <p>Our Recent Work</p>
-                <h2>What do you need designed?</h2>
+                <h2>What do you need <span className='boldtext'>designed</span>?</h2>
             </div>
             <div className="container">
                 <div className="tab-content current">

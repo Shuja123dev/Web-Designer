@@ -37,21 +37,21 @@ const WorkTabs = () => {
                 <Tab2 />
                 <Tab3 />
                 <Tab4 />
-                <Tab5 />
+                {/* <Tab5 />
                 <Tab6 />
                 <Tab7 />
                 <Tab8 />
-                <Tab9 />
+                <Tab9 /> */}
             </>
         )
     }
     const showTab2 = (id) => {
         checkClass(id);
-        setTabComponent(<Tab2 />);
+        setTabComponent(<Tab3 />);
     }
     const showTab3 = (id) => {
         checkClass(id);
-        setTabComponent(<Tab3 />);
+        setTabComponent(<Tab2 />);
     }
     const showTab4 = (id) => {
         checkClass(id)
