@@ -5,6 +5,7 @@ import paintImg from '../../assets/images/paint.png'
 import psImg from '../../assets/images/ps.png'
 import servicesImg from '../../assets/images/services.png'
 import artImg from '../../assets/images/art.png'
+import { NavLink } from 'react-router-dom'
 
 const ElevateOnline = () => {
     return (
@@ -16,10 +17,10 @@ const ElevateOnline = () => {
                             <img src={boyImg} alt="lazy" />
                             <div className="girl-video" data-position>
                                 <img src={videoImg} alt="lazy" />
-                                <a className="fancy-box-video" data-fancybox
+                                <NavLink className="fancy-box-video" data-fancybox
                                     href="https://www.youtube.com/watch?v=K4TOrB7at0Y&ab_channel=StealthMediaLTD">
                                     <span> <i className="fa-solid fa-play"></i> </span>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="elevate-width">

@@ -1,5 +1,6 @@
 import React from 'react'
 import gitImg from '../../assets/images/get-in-touch.png'
+import { NavLink } from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -30,7 +31,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="submit-button">
-                                <a style={{ cursor: 'pointer' }}>Send Message <i className="fa-solid fa-arrow-right"></i></a>
+                                <NavLink style={{ cursor: 'pointer' }}>Send Message <i className="fa-solid fa-arrow-right"></i></NavLink>
                             </div>
                         </form>
                     </div>

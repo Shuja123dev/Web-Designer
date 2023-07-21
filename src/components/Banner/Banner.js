@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import BannerImg from './BannerImg'
 import bannerImg1 from '../../assets/images/colleagues-working.png'
 import OwlCarousel from 'react-owl-carousel';

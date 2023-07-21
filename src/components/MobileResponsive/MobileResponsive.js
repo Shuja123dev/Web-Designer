@@ -1,6 +1,7 @@
 import React from 'react'
 import screens from '../../assets/images/screens.png'
 import screen2 from '../../assets/images/screen-two.png'
+import { NavLink } from 'react-router-dom'
 
 const MobileResponsive = () => {
     return (
@@ -27,7 +28,7 @@ const MobileResponsive = () => {
                             clearly, and they can offer feedback and suggestions based on their
                             expertise and experience. This direct collaboration allows for a more
                             personalized and tailored approach to your design project.</p>
-                        <a href="#">Start Project<i className="fa-solid fa-arrow-right"></i> </a>
+                        <NavLink>Start Project<i className="fa-solid fa-arrow-right"></i> </NavLink>
                     </div>
                 </div>
             </div>

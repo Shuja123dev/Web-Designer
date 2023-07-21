@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const ServiceBox = ({ icon, title, description }) => {
     return (
@@ -8,7 +9,7 @@ const ServiceBox = ({ icon, title, description }) => {
             </div>
             <h5>{title}</h5>
             <p>{description}</p>
-            <a href="#">Read More <i className="fa-solid fa-arrow-right"></i></a>
+            <NavLink>Read More <i className="fa-solid fa-arrow-right"></i></NavLink>
         </div>
     )
 }

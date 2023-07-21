@@ -1,5 +1,6 @@
 import React from 'react'
 import headerLogo from '../../assets/images/header-logo.png'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -13,23 +14,23 @@ const Footer = () => {
                     <div className="footer-col">
                         <ul>
                             <h5>Services</h5>
-                            <li><a href="#">Ui Ux Design</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">WordPress Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
+                            <li><NavLink>Ui Ux Design</NavLink></li>
+                            <li><NavLink>Web Design</NavLink></li>
+                            <li><NavLink>Graphic Design</NavLink></li>
+                            <li><NavLink>Web Development</NavLink></li>
+                            <li><NavLink>WordPress Design</NavLink></li>
+                            <li><NavLink>Graphic Design</NavLink></li>
                         </ul>
                     </div>
                     <div className="footer-col">
                         <ul>
                             <h5>Services</h5>
-                            <li><a href="#">Ui Ux Design</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">WordPress Design</a></li>
-                            <li><a href="#">Graphic Design</a></li>
+                            <li><NavLink>Ui Ux Design</NavLink></li>
+                            <li><NavLink>Web Design</NavLink></li>
+                            <li><NavLink>Graphic Design</NavLink></li>
+                            <li><NavLink>Web Development</NavLink></li>
+                            <li><NavLink>WordPress Design</NavLink></li>
+                            <li><NavLink>Graphic Design</NavLink></li>
                         </ul>
                     </div>
                     <div className="footer-col">
@@ -37,17 +38,17 @@ const Footer = () => {
                             <h5>Let's Connect</h5>
                             <div className="lets-connect">
                                 <div className="lets-col">
-                                    <a href="tel:+4733378901"><i className="fa-solid fa-phone"></i> +47 333 78 901</a>
+                                    <NavLink><i className="fa-solid fa-phone"></i> +47 333 78 901</NavLink>
                                 </div>
                                 <div className="lets-col">
-                                    <a href="mailto:support@web_designrr.com"><i className="fa-solid fa-envelope"></i>
-                                        support@web_designrr.com</a>
+                                    <NavLink><i className="fa-solid fa-envelope"></i>
+                                        support@web_designrr.com</NavLink>
                                 </div>
                             </div>
                             <div className="fti-icons">
-                                <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                                <NavLink><i className="fa-brands fa-facebook-f"></i></NavLink>
+                                <NavLink><i className="fa-brands fa-twitter"></i></NavLink>
+                                <NavLink><i className="fa-brands fa-instagram"></i></NavLink>
                             </div>
                         </ul>
                     </div>

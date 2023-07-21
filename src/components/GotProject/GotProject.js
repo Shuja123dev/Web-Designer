@@ -1,6 +1,7 @@
 import React from 'react'
 import dottedBg from '../../assets/images/dottet-background.png'
 import objectImg from '../../assets/images/Object.png'
+import { NavLink } from 'react-router-dom'
 
 const GotProject = () => {
     return (
@@ -16,7 +17,7 @@ const GotProject = () => {
                                 the first step towards making your vision a reality is often the hardest
                                 part. But with the right team behind you, the process can be smooth
                                 and stress-free.</p>
-                            <a href="#">Talk To Us<i className="fa-solid fa-arrow-right"></i> </a>
+                            <NavLink>Talk To Us<i className="fa-solid fa-arrow-right"></i> </NavLink>
                         </div>
                         <div className="got-project-col">
                             <img src={objectImg} alt="lazy" />

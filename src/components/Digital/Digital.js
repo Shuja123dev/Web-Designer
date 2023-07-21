@@ -1,5 +1,6 @@
 import React from 'react'
 import believeBg from '../../assets/images/believe-banner.png'
+import { NavLink } from 'react-router-dom'
 
 const Digital = () => {
     return (
@@ -12,7 +13,7 @@ const Digital = () => {
                         </div>
                         <div className="digital-col">
                             <p>Talk to us now</p>
-                            <a href="tel:+1 (561) 664-6455">+1 (561) 664-6455</a>
+                            <NavLink to='/'>+1 (561) 664-6455</NavLink>
                         </div>
                     </div>
                 </div>
@@ -23,7 +24,7 @@ const Digital = () => {
                         <p>Get in touch with us anytime</p>
                         <h1>we believe that every
                             great project starts with a vision</h1>
-                        <a href="#">Get A Quote <i className="fa-solid fa-arrow-right"></i></a>
+                        <NavLink>Get A Quote <i className="fa-solid fa-arrow-right"></i></NavLink>
                     </div>
                 </div>
             </section>
