@@ -18,7 +18,7 @@ const ElevateOnline = () => {
                             <div className="girl-video" data-position>
                                 <img src={videoImg} alt="lazy" />
                                 <NavLink className="fancy-box-video" data-fancybox
-                                    href="https://www.youtube.com/watch?v=K4TOrB7at0Y&ab_channel=StealthMediaLTD">
+                                    to="https://www.youtube.com/watch?v=K4TOrB7at0Y&ab_channel=StealthMediaLTD">
                                     <span> <i className="fa-solid fa-play"></i> </span>
                                 </NavLink>
                             </div>
