@@ -10,8 +10,14 @@ import gameDesign from '../../assets/icons/icon8.png'
 import graphicDesign from '../../assets/icons/icon9.png'
 import { NavLink } from 'react-router-dom'
 import { TabSwitchContext } from '../../context/TabSwitcher'
-import Tab1 from '../TabsConents/Tab1'
 import Tab2 from '../TabsConents/Tab2'
+import Tab3 from '../TabsConents/Tab3'
+import Tab4 from '../TabsConents/Tab4'
+import Tab5 from '../TabsConents/Tab5'
+import Tab6 from '../TabsConents/Tab6'
+import Tab7 from '../TabsConents/Tab7'
+import Tab8 from '../TabsConents/Tab8'
+import Tab9 from '../TabsConents/Tab9'
 
 const WorkTabs = () => {
 
@@ -28,36 +34,48 @@ const WorkTabs = () => {
         checkClass(id);
         setTabComponent(
             <>
-                <Tab1 />
                 <Tab2 />
+                <Tab3 />
+                <Tab4 />
+                <Tab5 />
+                <Tab6 />
+                <Tab7 />
+                <Tab8 />
+                <Tab9 />
             </>
         )
     }
     const showTab2 = (id) => {
         checkClass(id);
-        setTabComponent(<Tab1 />);
+        setTabComponent(<Tab2 />);
     }
     const showTab3 = (id) => {
         checkClass(id);
-        setTabComponent(<Tab2 />)
+        setTabComponent(<Tab3 />);
     }
     const showTab4 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab4 />);
     }
     const showTab5 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab5 />);
     }
     const showTab6 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab6 />);
     }
     const showTab7 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab7 />);
     }
     const showTab8 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab8 />);
     }
     const showTab9 = (id) => {
         checkClass(id)
+        setTabComponent(<Tab9 />);
     }
     return (
         <>
@@ -67,10 +85,10 @@ const WorkTabs = () => {
                 <li className="tab-link" onClick={() => showTab2('tab-2')} id="tab-2"><NavLink to='/'><img src={logoBranding}
                     alt="lazy" /></NavLink>Logo & Branding</li>
                 <li className="tab-link" onClick={() => showTab3('tab-3')} id="tab-3"><NavLink to='/'><img src={websiteIcon}
-                    alt="lazy" /></NavLink>Website Design <ul className="sub-tabbing">
-                        <li><NavLink to='/'>items</NavLink></li>
-                        <li><NavLink to='/'>items</NavLink></li>
-                        <li><NavLink to='/'>items</NavLink></li>
+                    alt="lazy" /></NavLink>Website Design <ul className="sub-tabbing" style={{ top: '50px', left: '0' }}>
+                        <li><NavLink to='/'>React </NavLink></li>
+                        <li><NavLink to='/'>Angular</NavLink></li>
+                        <li><NavLink to='/'>Next JS</NavLink></li>
                     </ul></li>
                 <li className="tab-link" onClick={() => showTab4('tab-4')} id="tab-4"><NavLink to='/'><img src={socialMedia}
                     alt="lazy" /></NavLink>Social Media Design</li>

@@ -1,4 +1,7 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import logo1 from '../../assets/images/logo1.png'
 import logo2 from '../../assets/images/logo2.png'
 import logo3 from '../../assets/images/logo3.png'
@@ -28,7 +31,7 @@ const FiveLogos = () => {
                         </div>
                     </div>
                     <div className="mobile-logo-slider">
-                        <div className="owl-carousel owl-theme">
+                        <OwlCarousel items={2} className="owl-theme" loop margin={8} dots={true}>
                             <div className="item">
                                 <div className="mobile-slider">
                                     <img src={logo1} alt="lazy" />
@@ -54,10 +57,10 @@ const FiveLogos = () => {
                                     <img src={logo5} alt="lazy" />
                                 </div>
                             </div>
-                        </div>
+                        </OwlCarousel>
                     </div>
-                </div>
-            </section>
+                </div >
+            </section >
         </>
     )
 }

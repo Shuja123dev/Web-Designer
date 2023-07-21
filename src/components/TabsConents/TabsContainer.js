@@ -12,7 +12,11 @@ const TabsContainer = () => {
                 <h2>What do you need designed?</h2>
             </div>
             <div className="container">
-                {tabComponent}
+                <div className="tab-content current">
+                    <div className="tabbing-flex">
+                        {tabComponent}
+                    </div>
+                </div>
             </div>
         </>
     )

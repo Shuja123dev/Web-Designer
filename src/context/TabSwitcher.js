@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
-import Tab1 from '../components/TabsConents/Tab1';
-import Tab2 from '../components/TabsConents/Tab2';
+import Tab1 from '../components/TabsConents/Tab2';
+import Tab2 from '../components/TabsConents/Tab3';
 
 const TabSwitchContext = createContext();
 
