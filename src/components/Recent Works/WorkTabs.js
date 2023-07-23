@@ -27,17 +27,19 @@ const WorkTabs = () => {
     const { setTabComponent } = useContext(TabSwitchContext);
 
     const checkClass = (id) => {
-        // const tabContainer = document.getElementById('tabsCotainer');
-        // const classElement = document.querySelector('.current');
-        // classElement.classList.remove('current');
-        // document.getElementById(id).classList.add('current')
+        const tabContainer = document.getElementById('tabsCotainer');
+        const classElement = document.querySelector('.current');
+        classElement.classList.remove('current');
+        document.getElementById(id).classList.add('current')
+
+    }
+
+    const checkMClass = (id) => {
         for (let n = 1; n <= 9; n++) {
             document.getElementById(`tabM-${n}`).classList.remove('current')
         }
         document.getElementById(id).classList.add('current')
-        console.log(id);
     }
-
     const showAllTabs = (id) => {
         checkClass(id);
         setTabComponent(
@@ -88,7 +90,7 @@ const WorkTabs = () => {
 
 
     const showAllMTabs = (id) => {
-        checkClass(id);
+        checkMClass(id);
         setTabComponent(
             <>
                 <Tab2 />
@@ -103,40 +105,40 @@ const WorkTabs = () => {
         )
     }
     const showMTab2 = (id) => {
-        checkClass(id);
+        checkMClass(id);
         setTabComponent(<Tab3 />);
     }
     const showMTab3 = (id) => {
-        checkClass(id);
+        checkMClass(id);
         setTabComponent(<Tab2 />);
     }
     const showMTab4 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab4 />);
     }
     const showMTab5 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab5 />);
     }
     const showMTab6 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab6 />);
     }
     const showMTab7 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab7 />);
     }
     const showMTab8 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab8 />);
     }
     const showMTab9 = (id) => {
-        checkClass(id)
+        checkMClass(id)
         setTabComponent(<Tab9 />);
     }
     return (
         <>
-            {/* <ul className="tabs desktop-tab-slider" id='tabsCotainer'>
+            <ul className="tabs desktop-tab-slider" id='tabsCotainer'>
                 <li className="tab-link current" onClick={() => showAllTabs('tab-1')} id="tab-1"><NavLink to='/'><img src={showAll}
                     alt="lazy" /></NavLink>Show All</li>
                 <li className="tab-link" onClick={() => showTab2('tab-2')} id="tab-2"><NavLink to='/'><img src={logoBranding}
@@ -159,7 +161,7 @@ const WorkTabs = () => {
                     alt="lazy" /></NavLink>Game Design</li>
                 <li className="tab-link" onClick={() => showTab9('tab-9')} id="tab-9"><NavLink to='/'><img src={graphicDesign}
                     alt="lazy" /></NavLink>Graphic Design</li>
-            </ul> */}
+            </ul>
 
             <ul className="tabs mobile-tab-slider">
                 <OwlCarousel items={2.7} className="owl-theme" loop margin={8} dots={true}>
