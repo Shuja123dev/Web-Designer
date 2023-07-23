@@ -1,5 +1,7 @@
 import React from 'react'
 import haederLogo from '../../assets/images/header-logo.png'
+import phoneIcon from '../../assets/icons/phoneIcon.png'
+import emailIcon from '../../assets/icons/emailIcon.png'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
@@ -39,7 +41,9 @@ const Header = () => {
                                 <div className="contact-icon-flex">
                                     <div className="contact-icon-width">
                                         <div className="phone-icon">
-                                            <NavLink to='/'><i className="fa-solid fa-phone"></i></NavLink>
+                                            <NavLink to='/'>
+                                                <img src={phoneIcon} alt="lazy" />
+                                            </NavLink>
                                         </div>
                                         <div className="phone-text">
                                             <NavLink to='/'>Call us Anytime</NavLink><br />
@@ -48,7 +52,9 @@ const Header = () => {
                                     </div>
                                     <div className="contact-icon-width">
                                         <div className="phone-icon">
-                                            <NavLink to='/'><i className="fa-solid fa-envelope"></i></NavLink>
+                                            <NavLink to='/'>
+                                                <img src={emailIcon} alt="lazy" />
+                                            </NavLink>
                                         </div>
                                         <div className="phone-text">
                                             <NavLink to='/'>Mail Us For Support</NavLink><br />
@@ -77,7 +83,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header >
         </>
     )
 }

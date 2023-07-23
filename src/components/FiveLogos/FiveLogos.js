@@ -31,7 +31,7 @@ const FiveLogos = () => {
                         </div>
                     </div>
                     <div className="mobile-logo-slider">
-                        <OwlCarousel items={2} className="owl-theme" loop margin={8} dots={true}>
+                        <OwlCarousel items={2} className="owl-theme" loop margin={8} dots={false}>
                             <div className="item">
                                 <div className="mobile-slider">
                                     <img src={logo1} alt="lazy" />

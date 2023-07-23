@@ -1,4 +1,7 @@
 import React, { useContext } from 'react'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import showAll from '../../assets/icons/icon1.png'
 import logoBranding from '../../assets/icons/icons.png'
 import websiteIcon from '../../assets/icons/icon3.png'
@@ -24,10 +27,15 @@ const WorkTabs = () => {
     const { setTabComponent } = useContext(TabSwitchContext);
 
     const checkClass = (id) => {
-        const tabContainer = document.getElementById('tabsCotainer');
-        const classElement = tabContainer.querySelector('.current');
-        classElement.classList.remove('current');
+        // const tabContainer = document.getElementById('tabsCotainer');
+        // const classElement = document.querySelector('.current');
+        // classElement.classList.remove('current');
+        // document.getElementById(id).classList.add('current')
+        for (let n = 1; n <= 9; n++) {
+            document.getElementById(`tabM-${n}`).classList.remove('current')
+        }
         document.getElementById(id).classList.add('current')
+        console.log(id);
     }
 
     const showAllTabs = (id) => {
@@ -37,8 +45,8 @@ const WorkTabs = () => {
                 <Tab2 />
                 <Tab3 />
                 <Tab4 />
-                {/* <Tab5 />
-                <Tab6 />
+                <Tab5 />
+                {/* <Tab6 />
                 <Tab7 />
                 <Tab8 />
                 <Tab9 /> */}
@@ -77,9 +85,58 @@ const WorkTabs = () => {
         checkClass(id)
         setTabComponent(<Tab9 />);
     }
+
+
+    const showAllMTabs = (id) => {
+        checkClass(id);
+        setTabComponent(
+            <>
+                <Tab2 />
+                <Tab3 />
+                <Tab4 />
+                <Tab5 />
+                {/* <Tab6 />
+                <Tab7 />
+                <Tab8 />
+                <Tab9 /> */}
+            </>
+        )
+    }
+    const showMTab2 = (id) => {
+        checkClass(id);
+        setTabComponent(<Tab3 />);
+    }
+    const showMTab3 = (id) => {
+        checkClass(id);
+        setTabComponent(<Tab2 />);
+    }
+    const showMTab4 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab4 />);
+    }
+    const showMTab5 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab5 />);
+    }
+    const showMTab6 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab6 />);
+    }
+    const showMTab7 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab7 />);
+    }
+    const showMTab8 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab8 />);
+    }
+    const showMTab9 = (id) => {
+        checkClass(id)
+        setTabComponent(<Tab9 />);
+    }
     return (
         <>
-            <ul className="tabs" id='tabsCotainer'>
+            {/* <ul className="tabs desktop-tab-slider" id='tabsCotainer'>
                 <li className="tab-link current" onClick={() => showAllTabs('tab-1')} id="tab-1"><NavLink to='/'><img src={showAll}
                     alt="lazy" /></NavLink>Show All</li>
                 <li className="tab-link" onClick={() => showTab2('tab-2')} id="tab-2"><NavLink to='/'><img src={logoBranding}
@@ -102,6 +159,33 @@ const WorkTabs = () => {
                     alt="lazy" /></NavLink>Game Design</li>
                 <li className="tab-link" onClick={() => showTab9('tab-9')} id="tab-9"><NavLink to='/'><img src={graphicDesign}
                     alt="lazy" /></NavLink>Graphic Design</li>
+            </ul> */}
+
+            <ul className="tabs mobile-tab-slider">
+                <OwlCarousel items={2.7} className="owl-theme" loop margin={8} dots={true}>
+                    <li className="tab-link current" onClick={() => showAllMTabs('tabM-1')} id="tabM-1"><NavLink to='/'><img src={showAll}
+                        alt="lazy" /></NavLink>Show All</li>
+                    <li className="tab-link" onClick={() => showMTab2('tabM-2')} id="tabM-2"><NavLink to='/'><img src={logoBranding}
+                        alt="lazy" /></NavLink>Logo & Branding</li>
+                    <li className="tab-link" onClick={() => showMTab3('tabM-3')} id="tabM-3"><NavLink to='/'><img src={websiteIcon}
+                        alt="lazy" /></NavLink>Website Design <ul className="sub-tabbing" style={{ top: '50px', left: '0' }}>
+                            <li><NavLink to='/'>React </NavLink></li>
+                            <li><NavLink to='/'>Angular</NavLink></li>
+                            <li><NavLink to='/'>Next JS</NavLink></li>
+                        </ul></li>
+                    <li className="tab-link" onClick={() => showMTab4('tabM-4')} id="tabM-4"><NavLink to='/'><img src={socialMedia}
+                        alt="lazy" /></NavLink>Social Media Design</li>
+                    <li className="tab-link" onClick={() => showMTab5('tabM-5')} id="tabM-5"><NavLink to='/'><img src={uiUx} alt='lazy' /></NavLink>Ui Ux
+                        Design</li>
+                    <li className="tab-link" onClick={() => showMTab6('tabM-6')} id="tabM-6"><NavLink to='/'><img src={illustrations}
+                        alt="lazy" /></NavLink>Illustrations</li>
+                    <li className="tab-link" onClick={() => showMTab7('tabM-7')} id="tabM-7"><NavLink to='/'><img src={imageEditing}
+                        alt="lazy" /></NavLink>Image Editing</li>
+                    <li className="tab-link" onClick={() => showMTab8('tabM-8')} id="tabM-8"><NavLink to='/'><img src={gameDesign}
+                        alt="lazy" /></NavLink>Game Design</li>
+                    <li className="tab-link" onClick={() => showMTab9('tabM-9')} id="tabM-9"><NavLink to='/'><img src={graphicDesign}
+                        alt="lazy" /></NavLink>Graphic Design</li>
+                </OwlCarousel>
             </ul>
         </>
     )

@@ -10,7 +10,7 @@ const Testimonials = () => {
                 <div className="container">
                     <div className="testimoniasl-text">
                         <p>Testimonials</p>
-                        <h2>What Are Customer
+                        <h2>What Are <span className='boldtext'>Customer </span>
                             Say About Us</h2>
                     </div>
                     <div className="testimonials-flex">

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -88,17 +89,17 @@ h2 strong {
 
 .header-top-icons {
     display: flex;
-    justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 25%;
+    max-width: 21%;
+    gap: 27px;
 }
 
 .header-top-icons p {
     color: #fff;
     width: 100%;
-    max-width: 40%;
+    max-width: 46%;
 }
 
 .social-media-links a {
@@ -140,13 +141,13 @@ h2 strong {
 
 .phone-text a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 
 .header-logo-width {
     width: 100%;
-    max-width: 48%;
+    max-width: 52%;
 }
 
 ul.nav-flex {
@@ -192,6 +193,8 @@ ul.nav-flex li a {
     font-weight: 400;
     color: #fff;
     padding-bottom: 40px;
+    width: 100%;
+    max-width: 75%;
 }
 
 .customers-flex {
@@ -260,10 +263,11 @@ section.creative-solutions::after {
 
 .five-logos-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     align-items: center;
     flex-wrap: wrap;
+    gap: 65px;
 }
 
 section.five-logos {
@@ -427,6 +431,7 @@ ul.tabs {
     border: 1px solid #ebebeb;
     border-left: none;
     border-right: none;
+    text-align: center;
 }
 
 ul.tabs li {
@@ -616,11 +621,11 @@ section.expert-team {
     margin: 100px auto 0;
 }
 
-ul.tabs li a img {
+/* ul.tabs li a img {
     width: 35px;
     height: 35px;
     margin: -10px 5px;
-}
+} */
 
 section.our-services {
     position: relative;
@@ -1148,6 +1153,15 @@ ul.tabs li {
     position: relative;
 }
 
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-flex;
+    padding: 23px 30px 23px 15px;
+    cursor: pointer;
+    align-items: center;
+}
+
 ul.sub-tabbing {
     position: absolute;
     background-color: white;
@@ -1203,15 +1217,11 @@ ul.sub-tabbing li a {
     opacity: 0.3;
 }
 
-.owl-theme .owl-dots {
-    display: none;
-}
-
 #main .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 70px;
+    left: 10px;
     height: 55px;
     width: 55px;
     border: 4px solid #fff !important;
@@ -1230,7 +1240,7 @@ ul.sub-tabbing li a {
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 70px;
+    right: 10px;
     height: 55px;
     width: 55px;
     border: 4px solid #fff;
@@ -1303,10 +1313,69 @@ section.elevate-online {
     margin-right: 10px;
 }
 
+section.five-logos {
+    padding: 95px 0;
+}
+
+/* new css afterr QA */
+.contact-icon-flex .contact-icon-width:nth-child(1) .phone-text a:first-child {
+    font-size: 14px;
+    color: #5e5e64;
+    font-weight: 400;
+}
+
+.contact-icon-flex .contact-icon-width:nth-child(1) .phone-text a:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-icon-flex .contact-icon-width:nth-child(2) .phone-text a:first-child {
+    font-size: 14px;
+    color: #5e5e64;
+    font-weight: 400;
+}
+
+.contact-icon-flex .contact-icon-width:nth-child(1) .phone-text a:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.five-logos-width {
+    width: 100%;
+    max-width: 15%;
+}
+
+ul.tabs li a {
+    margin-right: 13px;
+}
+
+.expert-text h2 strong {
+    font-weight: 900;
+}
+
+.phone-icon a img {
+    margin-right: 15px;
+    width: 27px;
+    /* height: 27px; */
+}
+
+.recent-work {
+    position: relative;
+}
+
+.openPopup {
+    /* display: block !important; */
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+.mobile-tab-slider {
+    display: none;
+}
 
 @media only screen and (max-width: 1680px) {
     ul.tabs li {
-        padding: 15px 5px;
+        padding: 20px 9px;
     }
 
     section.our-services::before {
@@ -1348,12 +1417,7 @@ section.elevate-online {
         padding: 50px 0;
     }
 
-    .banner-image p {
-        width: 100%;
-        max-width: 90%;
-        margin: 0 !important;
-        ;
-    }
+
 
     .header-nav {
         margin: 10px 0;
@@ -1392,10 +1456,10 @@ section.elevate-online {
         right: 10px;
     }
 
-    ul.tabs li a img {
+    /* ul.tabs li a img {
         width: 30px;
         height: 30px;
-    }
+    } */
 
     ul.tabs li {
         font-size: 12px;
@@ -1403,11 +1467,11 @@ section.elevate-online {
     }
 
     ul.tabs li {
-        padding: 15px 10px;
+        padding: 15px 8px;
     }
 
     ul.sub-tabbing {
-        top: 60px;
+        top: 64px;
     }
 
     section.testimonials {
@@ -1417,6 +1481,23 @@ section.elevate-online {
     .expert-text h2 {
         width: 100%;
         max-width: 57%;
+    }
+
+    .five-logos-flex {
+        width: 100%;
+        max-width: 86%;
+        margin: 0 auto;
+    }
+
+    .five-logos-width {
+        width: 100%;
+        max-width: 10%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    ul.tabs li {
+        padding: 15px 8px;
     }
 }
 
@@ -1430,7 +1511,7 @@ section.elevate-online {
     }
 
     ul.tabs {
-        padding: 5px;
+        padding: 5px 10px;
     }
 }
 
@@ -1882,7 +1963,7 @@ section.elevate-online {
     .got-project-col {
         width: 100%;
         max-width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
 
     .testimonials-col {
@@ -2132,5 +2213,21 @@ section.elevate-online {
 
     ul.tabs li.current {
         border-bottom: 1px solid #33333345;
+    }
+
+    #webTabs {
+        display: none;
+    }
+
+    .desktop-tab-slider {
+        display: none !important;
+    }
+
+    .mobile-tab-slider {
+        display: block;
+    }
+
+    .mobile-tab-slider li {
+        width: 100% !important;
     }
 }
