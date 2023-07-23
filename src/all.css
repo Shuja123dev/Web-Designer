@@ -2183,6 +2183,8 @@ ul.tabs li a {
 
     ul.tabs li {
         width: 50%;
+        min-width: max-content;
+        margin-right: 20px;
     }
 
     .phone-icon a i {
@@ -2224,7 +2226,9 @@ ul.tabs li a {
     }
 
     .mobile-tab-slider {
-        display: block;
+        display: flex;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
     }
 
     .mobile-tab-slider li {
@@ -2233,5 +2237,18 @@ ul.tabs li a {
 
     ul.sub-tabbing {
         display: none;
+    }
+
+    ul.tabs li a {
+        margin-right: 0;
+    }
+
+    .got-project-col img {
+        transform: none;
+    }
+
+    .mobile-responsive-col h2 {
+        margin-top: 20px;
+        line-height: initial;
     }
 }

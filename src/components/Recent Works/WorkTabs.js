@@ -1,7 +1,4 @@
 import React, { useContext } from 'react'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import showAll from '../../assets/icons/icon1.png'
 import logoBranding from '../../assets/icons/icons.png'
 import websiteIcon from '../../assets/icons/icon3.png'
@@ -27,7 +24,6 @@ const WorkTabs = () => {
     const { setTabComponent } = useContext(TabSwitchContext);
 
     const checkClass = (id) => {
-        const tabContainer = document.getElementById('tabsCotainer');
         const classElement = document.querySelector('.current');
         classElement.classList.remove('current');
         document.getElementById(id).classList.add('current')
@@ -164,30 +160,30 @@ const WorkTabs = () => {
             </ul>
 
             <ul className="tabs mobile-tab-slider">
-                <OwlCarousel items={2.7} className="owl-theme" loop margin={8} dots={true}>
-                    <li className="tab-link current" onClick={() => showAllMTabs('tabM-1')} id="tabM-1"><NavLink to='/'><img src={showAll}
-                        alt="lazy" /></NavLink>Show All</li>
-                    <li className="tab-link" onClick={() => showMTab2('tabM-2')} id="tabM-2"><NavLink to='/'><img src={logoBranding}
-                        alt="lazy" /></NavLink>Logo & Branding</li>
-                    <li className="tab-link" onClick={() => showMTab3('tabM-3')} id="tabM-3"><NavLink to='/'><img src={websiteIcon}
-                        alt="lazy" /></NavLink>Website Design <ul className="sub-tabbing" style={{ top: '50px', left: '0' }}>
-                            <li><NavLink to='/'>React </NavLink></li>
-                            <li><NavLink to='/'>Angular</NavLink></li>
-                            <li><NavLink to='/'>Next JS</NavLink></li>
-                        </ul></li>
-                    <li className="tab-link" onClick={() => showMTab4('tabM-4')} id="tabM-4"><NavLink to='/'><img src={socialMedia}
-                        alt="lazy" /></NavLink>Social Media Design</li>
-                    <li className="tab-link" onClick={() => showMTab5('tabM-5')} id="tabM-5"><NavLink to='/'><img src={uiUx} alt='lazy' /></NavLink>Ui Ux
-                        Design</li>
-                    <li className="tab-link" onClick={() => showMTab6('tabM-6')} id="tabM-6"><NavLink to='/'><img src={illustrations}
-                        alt="lazy" /></NavLink>Illustrations</li>
-                    <li className="tab-link" onClick={() => showMTab7('tabM-7')} id="tabM-7"><NavLink to='/'><img src={imageEditing}
-                        alt="lazy" /></NavLink>Image Editing</li>
-                    <li className="tab-link" onClick={() => showMTab8('tabM-8')} id="tabM-8"><NavLink to='/'><img src={gameDesign}
-                        alt="lazy" /></NavLink>Game Design</li>
-                    <li className="tab-link" onClick={() => showMTab9('tabM-9')} id="tabM-9"><NavLink to='/'><img src={graphicDesign}
-                        alt="lazy" /></NavLink>Graphic Design</li>
-                </OwlCarousel>
+                {/* <OwlCarousel items={2.7} className="owl-theme" loop margin={8} dots={true}> */}
+                <li className="tab-link current" onClick={() => showAllMTabs('tabM-1')} id="tabM-1"><NavLink to='/'><img src={showAll}
+                    alt="lazy" /></NavLink>Show All</li>
+                <li className="tab-link" onClick={() => showMTab2('tabM-2')} id="tabM-2"><NavLink to='/'><img src={logoBranding}
+                    alt="lazy" /></NavLink>Logo & Branding</li>
+                <li className="tab-link" onClick={() => showMTab3('tabM-3')} id="tabM-3"><NavLink to='/'><img src={websiteIcon}
+                    alt="lazy" /></NavLink>Website Design <ul className="sub-tabbing" style={{ top: '50px', left: '0' }}>
+                        <li><NavLink to='/'>React </NavLink></li>
+                        <li><NavLink to='/'>Angular</NavLink></li>
+                        <li><NavLink to='/'>Next JS</NavLink></li>
+                    </ul></li>
+                <li className="tab-link" onClick={() => showMTab4('tabM-4')} id="tabM-4"><NavLink to='/'><img src={socialMedia}
+                    alt="lazy" /></NavLink>Social Media Design</li>
+                <li className="tab-link" onClick={() => showMTab5('tabM-5')} id="tabM-5"><NavLink to='/'><img src={uiUx} alt='lazy' /></NavLink>Ui Ux
+                    Design</li>
+                <li className="tab-link" onClick={() => showMTab6('tabM-6')} id="tabM-6"><NavLink to='/'><img src={illustrations}
+                    alt="lazy" /></NavLink>Illustrations</li>
+                <li className="tab-link" onClick={() => showMTab7('tabM-7')} id="tabM-7"><NavLink to='/'><img src={imageEditing}
+                    alt="lazy" /></NavLink>Image Editing</li>
+                <li className="tab-link" onClick={() => showMTab8('tabM-8')} id="tabM-8"><NavLink to='/'><img src={gameDesign}
+                    alt="lazy" /></NavLink>Game Design</li>
+                <li className="tab-link" onClick={() => showMTab9('tabM-9')} id="tabM-9"><NavLink to='/'><img src={graphicDesign}
+                    alt="lazy" /></NavLink>Graphic Design</li>
+                {/* </OwlCarousel> */}
             </ul>
         </>
     )
